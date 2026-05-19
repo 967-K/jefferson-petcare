@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas - PETCARE</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="verificarSesion()">
+
+    <header>
+
+        <h1>Mascotas disponibles</h1>
+
+        <nav>
+            <button onclick="cerrarSesion()">Cerrar sesion</button>
+        </nav>
+    </header>
+
+    <section class="mensaje">
+            <h2>Encuentra tu companero ideal</h2>
+            <p>Estas mascotas estan esperando un hogar lleno de amor y cuidado.</p>
+        </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <img src="img/perro.jpg" alt="Perro">
+            <h3>Max</h3>
+            <p>Perro - 2 años</p>
+            <button onclick="seleccionarMascota('Max')">Adoptar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/gato.jpg" alt="Gato">
+            <h3>Luna</h3>
+            <p>Gato - 1 año</p>
+            <button onclick="seleccionarMascota('Luna')">Adoptar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/conejo.jpg" alt="Conejo">
+            <h3>Nube</h3>
+            <p>Conejo - 1 año</p>
+            <button onclick="seleccionarMascota('Nube')">Adoptar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/golden.jpg" alt="Golden">
+            <h3>Rocky</h3>
+            <p>Golden - 3 años</p>
+             <button onclick="seleccionarMascota('Rocky')">Adoptar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/husky.jpg" alt="Husky">
+            <h3>Milo</h3>
+            <p>Husky - 2 años</p>
+             <button onclick="seleccionarMascota('Milo')">Adoptar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/naranja.jpg" alt="Gato naranja">
+            <h3>Coco</h3>
+            <p>Gato - 1 año</p>
+            <button onclick="seleccionarMascota('Coco')">Adoptar</button>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+        <p>PETCARE 2026 - Proyecto academico de programacion web</p>
+    </footer>
+
+</body>
+</html>

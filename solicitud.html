@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud - PETCARE</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="verificarSesion(); cargarMascota()">
+
+    <div class="formulario">
+        <h2>Solicitud de adopcion</h2>
+
+        <input type="text" id="nombre" placeholder="Nombre completo">
+        <input type="text" id="telefono" placeholder="Telefono">
+        <input type="text" id="direccion" placeholder="Direccion">
+        <input type="text" id="mascota" placeholder="Mascota seleccionada" readonly>
+
+        <button onclick="enviarSolicitud()">Enviar solicitud</button>
+
+        <br><br>
+            <a href="mascotas.html">
+            <button>Volver a mascotas</button>
+        </a>
+
+        <div id="resumen" class="resumen"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+        <p>PETCARE 2026 - Proyecto academico de programacion web</p>
+    </footer>
+
+</body>
+</html>
