@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0a0f2c, #4c1d95);
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d8b4fe;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-contenido {
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5b21b6;
+}
+
+.servicios {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.formulario {
+    width: 350px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.formulario input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.resumen {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+    .formulario {
+        width: 85%;
+    }
+
+    .formulario a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .formulario a:hover {
+        color: #d8b4fe;
+    }
+
+    .mensaje {
+         text-align: center;
+        padding: 30px;
+    }
+
+    .mensaje p {
+         color: #d8b4fe;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    header button {
+        background-color: #7c3aed;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
